@@ -1,0 +1,203 @@
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 800px) and (orientation:portrait){
+	
+	.container-width{
+		width: 90%;
+	}
+    /*** PAGE MENU ***/
+
+    .page-menu{
+      .top-bar{
+        #bottom-banner{
+          ul{
+            .link-single{
+              a{
+                span{
+                  padding: 0 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /*** HOME ***/
+  	
+  	#home-grid{
+  		.container-width{
+  			.home-grid-row{
+  				.large-grid-container{
+  					height: 365px;
+
+  					.grid-link{
+  						a{
+  							height: 325px;
+  						}
+  					}
+  				}
+		  		.small-grid-row{
+		  			height: 170px;
+		  		}  				
+  			}
+  		}
+  		#grid-bottom{
+  			ul{
+  				li{
+  					height: 170px;
+  				}
+  			}
+  		}
+  	}
+
+  	#home-registries{
+  		.home-reg-single{
+  			.home-reg-img{
+  				height: 200px;
+  				width: 200px;
+  			}
+  			.home-reg-text{
+  				right: 30px;
+
+  				a{
+  					width: 110%;
+
+  					.smaller-cursive{
+  						font-size: 2.1rem;
+  					}
+  				}
+  				.home-reg-bg{
+  					width: 110%;
+  				}
+  			}
+
+  		}
+  	}
+
+  	/*** HEIGHT OF SHORT PAGES ***/
+
+  	#findreg-container, #entersite{
+  		height: 780px;
+  	}
+
+    #collections{
+      #category-container{
+        #cat-sb{
+          display: table;
+
+          .filter-options{
+            display: table-cell;
+          }
+
+          .filter-cat{
+            text-align: right;
+
+            a{
+              span{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+
+        #registry-grid{
+          ul{
+            text-align: center;
+          }
+        }
+      }
+    }    
+ 
+ }
+
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px) and (orientation:portrait){
+
+  	/*** HEIGHT OF SHORT PAGES ***/
+  	
+  	#findreg-container, #entersite{
+  		height: 1035px;
+  	}
+
+    /*** MENU ***/
+
+    .page-menu{
+      .top-bar{
+        #bottom-banner{
+          ul{
+            .link-single{
+              a{
+                span{
+                  padding: 0 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #collections{
+      #category-container{
+        #cat-sb{
+          display: table;
+
+          .filter-options{
+            display: table-cell;
+          }
+
+          .filter-cat{
+            text-align: right;
+
+            a{
+              span{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+}
+
+@media only screen 
+  and (min-device-width: 960px) 
+  and (max-device-width: 1024px) and (orientation:landscape){
+
+    #collections{
+      #category-container{
+        #cat-sb{
+          display: table;
+
+          .filter-options{
+            display: table-cell;
+          }
+
+          .filter-cat{
+            text-align: right;
+
+            a{
+              span{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+
+        #registry-grid{
+          ul{
+            .grid-single{
+              margin: 0px 39px 0px 0px;
+
+              &:nth-child(4n){
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+}

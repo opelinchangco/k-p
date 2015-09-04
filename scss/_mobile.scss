@@ -1,0 +1,733 @@
+/*** Mobile - Portrait ***/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait){
+
+  	/*** HIDE & DISPLAY ***/
+
+  	#home #home-grid, #home-slider, #home-registries, #home-head-down, #bottom-banner, #home footer, .login-icon, .cart-icon, .registry-icon{
+  		display: none !important;
+  	}
+  	
+  	#mobile-menu, #firstpresent{
+  		display: table !important;
+  	}
+
+    #mobile-dropdown{
+      display: block !important;
+    }
+
+
+  	/*** GENERICS ***/
+
+  	.container-width{
+  		width: 90%;
+  	}
+
+	.large-cursive{
+		font-size: 3.2rem;
+		line-height: 54px;
+	}
+	.small-sans{
+		font-size: 1rem;
+		letter-spacing: 1px;
+	}
+	
+	/*** MENU ***/
+
+	#home-menu{
+		#logo{
+			padding-top: 5px;
+
+			a{
+				width: 33px;
+			}
+		}
+		#link-icons{
+			padding-top: 13px;
+
+			.link-icon-single{
+				a{
+					img{
+						height: 23px;
+					}
+				}
+			} 
+		}
+	}
+
+  .page-menu{
+    .top-bar{
+      display: table;
+      position: fixed;
+      width: 100%;
+      overflow: auto;
+    }
+  }
+  #mobile-menu-couple{
+    li{
+      width: 16%;
+    }
+  }
+  /*** SHOP ***/
+
+  #featured-brands{
+    #grid-bottom{
+      ul{
+        li{
+          margin-right: 15px !important;
+          margin-bottom: 15px !important;
+          padding: 0px;
+          width: 47%;
+          height: 150px;
+
+          &:nth-child(even){
+            margin-right: 0px !important;
+          }
+
+          a{
+            line-height: 10 !important;
+          }
+        }
+
+      }
+    }
+  }
+
+  /*** FOOTER ***/	  	
+
+  footer{
+    .footer-col{
+      width: 100%;
+      margin: 25px 0px; 
+
+      .backtotop{
+        position: absolute;
+        top: -115px;
+        right: 0px;
+        width: 30px;
+      }
+    }
+  }
+  	
+  	/*** HOME ***/
+  	#home{
+  		#home-head{
+  			position: fixed;
+  		}
+		#home-head, #home-head-container, #home-head-bg{
+			height: 100%;
+		}
+		#home-head-container{
+			#home-head-main-img{
+				width: 65%;
+        padding-top: 85px;
+			}
+			#home-head-play{
+				width: 10.9%;
+			}
+			#home-head-links{
+				padding-top: 55px;
+
+				.right{
+					margin-right: 55px;
+				}
+				.left{
+					margin-left: 55px;
+				}
+			}
+		}
+		#home-head-bg{
+			.home-head-bg{
+				height: inherit;
+			}
+		}  		
+  	}
+  	#home-grid{
+  		.container-width{
+  			.home-grid-row{
+  				.grid-col{
+  					width: 100%;
+  					padding: 0px;
+  					margin-bottom: 21px;
+  				}
+  				.large-grid-container{
+  					height: 281px;
+
+  					.grid-link{
+  						a{
+  							height: 240px;
+  						}
+  					}  					
+  				}
+		  		.small-grid-row{
+		  			height: 130px;
+
+		  			.small-grid-link {
+		  				img{
+		  					width: 60%;
+		  				}
+		  			}
+		  		}
+
+  			}
+  		}
+  		#grid-bottom{
+  			ul{
+  				padding: 0px;
+
+  				li{
+  					height: 130px;
+  				}
+  			}
+  		}
+  	}
+
+
+
+	/*** LOGIN ***/
+		#entersite{
+			padding-top: 70px;
+			height: 600px;
+
+      #cred-soc-mob{
+        display: block;
+      }
+
+			.cred-forms{
+			 margin-top: 15px;
+
+				#cred-login{
+					#cred-submit{
+						text-align: center;
+						a{
+							float: none;
+							margin: 10px auto;
+						}
+					}
+          #forget-pass{
+            text-align: center;
+
+            a{
+              float: none;
+            }
+          }
+				}
+				#login-divider, #cred-social{
+					display: none;
+				}
+			}
+		}
+	#login{
+		#cred-login{
+			padding: 0px;
+		}
+	}
+
+
+  	/*** FIND REGISTRY ***/ 	
+
+  	#findreg-container{
+  		form{
+  			columns{
+  				padding: 0px;
+  			}
+  		}
+  		.findreg-matches{
+  			margin-top: 10px;
+  		}
+  		.findreg-results{
+  			.findreg-slider{
+  				margin-bottom: 100px;
+  				li{
+  					ul{
+  						.single-result{
+  							width: 47%;
+  							margin: 2px;
+  							padding: 0px;
+  						}
+  					}
+  				}
+  			}
+  		}
+  		.customize-prev, .customize-next{
+  			display: none !important;
+  		}
+  	}
+  /*** COLLECTIONS ***/
+
+  #collection-grid{
+    ul{
+      width: 90%;
+      margin: auto !important; 
+
+      .collection-single{
+        max-width: 230px;
+        width: 100% !important;
+        margin: 0 auto 50px;
+
+        .coll-contain{
+          .grid-hover{
+            max-width: 230px;
+          }
+          .coll-grid{
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  } 
+  /*** REGISTRY GRID ***/
+
+    #collections{
+      #category-container{
+        #cat-sb{
+           display: table;
+           padding: 20px 0px;
+ 
+           .filter-options{
+             display: table-cell;
+           }
+ 
+           .filter-cat{
+             text-align: right;
+ 
+             a{
+               span{
+                 margin-right: 10px;
+              }
+            }
+          }
+        }
+
+        #registry-grid{
+          padding: 0px;
+
+          ul{
+            text-align: center;
+
+            .grid-single{
+              width: 100%;
+              max-width: 230px;
+              height: 230px;
+
+              .grid-hover{
+
+                .grid-link-wrap{
+                  .grid-link-text{
+                    
+                    .grid-link-edit{
+                      margin-bottom: 50px;
+                    }
+                    .grid-link-details{
+                      width: 100%;
+                      margin-bottom: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+    } 
+
+}
+
+/*** Mobile - Landscape ***/
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 736px) 
+  and (orientation: landscape){
+
+  	/*** HIDE & DISPLAY ***/
+
+  	#home #home-grid, #home-slider, #home-registries, #home footer, .login-icon, .cart-icon, .registry-icon{
+  		display: none !important;
+  	}
+  	
+  	#mobile-menu{
+  		display: table;
+  	}
+
+  	/*** MENU ***/
+
+  	#home-menu{
+  		#logo{
+  			a{
+  				width: 35%;
+  			}
+  		}
+  	}
+  	.menu{
+  		#link-icons{
+  			padding-top: 20px;
+  		}
+  	}
+    #bottom-banner{
+      ul{
+        .link-single{
+          a{
+            span{
+              padding: 0 10px !important;
+            }
+          }
+        }
+      }
+    }
+
+  	/*** HOME ***/
+
+  	#home-head-container{
+  		#home-head-main-img{
+  			width: 50%;
+  			padding-top: 30px;
+  		}
+  		#home-head-play{
+  			width: 8%;
+  			padding-top: 15px;
+  		}
+  	}
+
+  	#home-grid{
+  		.container-width{
+  			.home-grid-row{
+  				.large-grid-container{
+  					height: 281px;
+
+  					.grid-link{
+  						a{
+  							height: 240px;
+  						}
+  					}
+  				}
+		  		.small-grid-row{
+		  			height: 130px;
+		  		}
+  			}
+  		}
+  		#grid-bottom{
+  			ul{
+  				li{
+  					height: 130px;
+  				}
+  			}
+  		}
+  	}
+
+  	#findreg-container{
+  		.reg-form {
+  				.large-8{
+  					width: 60%;
+  				}
+  				.find{
+  					width: 40%;
+  				}
+  			}
+  		
+
+  		.findreg-results{
+  			.findreg-slider{
+  				margin-bottom: 100px;
+
+  				li{
+  					ul{
+  						.single-result{
+  							width: 47%;
+  						}
+  					}
+  				}
+  			}
+  		}
+  		.customize-prev, .customize-next{
+  			display: none !important;
+  		}
+  	} 
+      /*** SHOP ***/
+
+      #featured-brands{
+        #grid-bottom{
+          ul{
+            li{
+              margin-right: 9px !important;
+              padding: 0px;
+              width: 23%;
+              height: 150px;
+
+              &:nth-child(even){
+                margin-right: 0px;
+              }
+
+              a{
+                line-height: 10 !important;
+              }
+            }
+
+          }
+        }
+      }
+
+  /*** LOGIN ***/
+
+  #entersite{
+    padding-top: 70px;
+
+    #credentials{
+      max-width: none;
+      width: 70%;
+
+      .cred-forms{
+        margin-top: 15px;
+
+        #login-divider, #cred-social{
+          display: none;
+        }
+      }
+    }  
+    #cred-soc-mob{
+      display: block;
+    }
+  }
+  #firstpresent{
+   display: block;
+  }  
+
+  /*** COLLECTIONS ***/
+
+  #collections{
+    #cat-sb{
+       display: table;
+       padding: 20px 0px;
+
+       .filter-options{
+         display: table-cell;
+       }
+
+       .filter-cat{
+         text-align: right;
+
+         a{
+           span{
+             margin-right: 10px;
+          }
+        }
+      }
+    }    
+    #registry-grid{
+      ul{
+          text-align: center;
+      }
+    }
+    #collection-grid{
+      ul{
+
+        .collection-single{
+          width: 49%;
+          margin: 0px 0px 30px 0px;
+
+          .coll-contain{
+            height: 212px;
+            width: 210px;
+            margin: auto;
+
+            .grid-hover{
+              width: 210px;
+            }
+            .coll-grid{
+              .coll-grid-large{
+                height: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+/*** Large Mobile - Portrait ***/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 3)
+  and (orientation: portrait){
+
+  	#home-grid{
+  		.container-width{
+  			.home-grid-row{
+  				.large-grid-container{
+  					height: 321px;
+
+  					.grid-link{
+  						a{
+  							height: 280px;
+  						}
+  					}
+  				}
+		  		.small-grid-row{
+		  			height: 150px;
+		  		}
+  			}
+  		}
+  		#grid-bottom{
+  			ul{
+  				li{
+  					height: 150px;
+  				}
+  			}
+  		}
+  	} 
+}
+
+/*** Large Mobile - PORTRAIT ***/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 600px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 3)  
+  and (orientation: portrait){
+
+    #collections{
+      #category-container
+        {
+          #cat-sb{
+             display: table;
+   
+             .filter-options{
+               display: table-cell;
+             }
+   
+             .filter-cat{
+               text-align: right;
+   
+               a{
+                 span{
+                   margin-right: 10px;
+                 }
+               }
+             }
+           } 
+        }     
+      #collection-grid{
+        ul{
+          text-align: center;
+
+          .collection-single{
+            max-width: none;
+            width: 100%;
+
+            .coll-contain{
+              width: 264px;
+              margin: auto;
+            }            
+
+          }
+        }
+      }
+    }
+
+}
+/*** Large Mobile - Landscape ***/
+
+@media only screen 
+  and (min-device-width: 667px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 3)  
+  and (orientation: landscape){
+  	
+  	/*** HOME ***/
+
+  	#home-head-container{
+  		#home-head-main-img{
+  			width: 55%;
+  			padding-top: 50px;
+  		}
+  		#home-head-play{
+  			width: 8%;
+  			padding-top: 25px;
+  		}
+  	}
+  	#findreg-container{
+  		.findreg-results{
+  			.findreg-slider{
+  				li{
+  					ul{
+  						.single-result{
+  							width: 21%;
+  						}
+  					}
+  				}
+  			}
+		 	.customize-prev, .customize-next{
+				display: block !important;
+				top: -200px;
+			}  		
+			.customize-prev{
+				float: left;
+			}	
+  		}
+
+  	}
+    #collection-grid{
+      ul{
+        .collection-single{
+          max-width: none;
+          margin: 0 32px 30px 0px;
+          
+          &:nth-child(even){
+            margin-right: 0px !important;
+          }
+        }
+      }
+    }
+  /*** LOGIN ***/
+
+  #entersite{
+    padding-top: 70px;
+    height: 500px;
+
+    #credentials{
+
+      .cred-forms{
+        margin-top: 15px;
+
+        #login-divider, #cred-social{
+          display: table;
+        }
+        #cred-social{
+          .fb-btn{
+            a{
+              img{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }  
+    #cred-soc-mob{
+      display: none;
+    }
+  }
+  #firstpresent{
+   display: none;
+  }  
+  #mobile-menu-couple{
+    li{
+      width: 16%;
+    }
+  }  
+}

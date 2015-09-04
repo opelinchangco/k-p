@@ -1,0 +1,175 @@
+/*** LOGIN / SIGNUP ***/
+
+#entersite{
+	@extend #home-head;
+	padding-top: 130px;
+	background-repeat: no-repeat;
+
+	.medium-sans{
+		text-align: center;
+		color: $cream;
+	}
+
+	#cred-soc-mob{
+		display: none;
+		text-align: center;
+
+		h4, p{
+			font-family: $bodyfont;	
+			font-size: .7rem;
+			color: $cream !important;
+		}
+		a{
+			display: table;
+			margin: 15px 0px;
+			width: 100%;
+
+			img{
+				width: 50%;
+			}
+		}
+
+	}
+
+	.cred-forms{
+		margin-top: 56px;
+
+		#cred-login {
+
+			input{
+				background-color: transparent;
+				border-color: $cream !important;
+				height: 48px;
+				font-family: $bodyfont;	
+				font-size: 0.65rem;
+				color: $cream !important;
+			}		
+			#forget-pass a{
+				font-family: $bodyfont;	
+				font-size: 0.65rem;
+				color: $cream !important;
+				float: right;
+			}
+			.date{
+				margin-bottom: 1rem;
+
+				.date-container{
+					border: 1px solid $cream;
+					display: table;
+					width: 100%;
+
+					input{
+						float: left;
+						border: none !important;
+						padding: 0 .5rem;
+						height: 34px;
+						display: table-cell;
+						margin: 5px 0px;
+						border-right: 1px solid $cream !important;
+						box-shadow: none;
+					}
+					.month{
+						width: 40%;
+					}
+					.day,.year{
+						width: 30%;
+					}
+					.year{
+						border-right: none !important;
+					}
+				}
+				
+			}
+			#cred-submit a{
+				@extend .link-button;
+				float: right;
+				background-color: $coral1;
+				padding: 16px 50px;
+				margin-top: 19px;
+
+				&:hover{
+					background-color: $coral1-hover;
+				};
+
+			}
+			#cred-agree{
+				input, label{
+					float: right;
+				}
+				input{
+					width: 5%;
+					float: left;
+				}
+				#agreebox{
+					height: 27px;
+				}
+				label{
+					font-family: $bodyfont;	
+					font-size: 0.65rem;
+					color: $cream !important;
+					width: 90%;
+					display: block;
+					margin: auto;	
+
+					a{
+						color: $cream;
+						text-decoration: underline;
+					}									
+				}
+			}			
+		}
+		#login-divider{
+			display: table;
+			padding: 0 5px;
+
+			p{
+				display: table-cell;
+				vertical-align: middle;
+				color: $cream;
+				padding-bottom: 100px;
+			}
+		}
+		#cred-social{
+			display: table;
+
+			.fb-btn{
+				display: table-cell;
+				vertical-align: middle;
+				padding-bottom: 100px;
+
+				a{
+					img{
+						width: 60%;
+					}
+				}
+			}
+		}			
+		
+	}
+}
+
+#firstpresent{
+	display: none;
+	padding: 10px;
+	margin-bottom: 70px;
+	text-align: center;
+
+	.firstpresent-text{
+		margin-top: 45px;
+		text-align: center;
+
+		.small-cursive{
+			font-size: 3.3rem;
+			color: $blue1;
+			line-height: 2.5rem;
+		}
+		.medium-sans{
+			color: $coral1;
+		}
+		.bodyfont{
+			font-size: .7rem;
+			width: 70%;
+			margin: auto;			
+		}
+	}
+}

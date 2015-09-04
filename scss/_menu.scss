@@ -1,0 +1,406 @@
+/****** MENU ******/
+#mobile-dropdown{
+	display: none;
+}
+.menu{
+	#link-icons{
+		padding-top: 41px;
+
+		img{
+  			height: 19px;
+  			display: block;
+		}
+		.cart-icon{
+			a{
+				p{
+					margin-left: 5px;
+				}
+			}
+		}
+		li{
+			width: 28px;
+
+			a{
+				color: $cream;
+				text-transform: uppercase;
+				text-align: center;
+
+				img{
+					margin: auto;
+				}
+
+				p{
+					font-size: 6px;
+					letter-spacing: 1px;
+					padding-top: 3px;
+					margin-bottom: 0;	
+				}
+			}
+		}	
+	}
+	#mobile-dropdown{
+		.dropdown-btn{
+			@extend .bodyfont;
+			display: table;
+			margin: auto;
+			color: $blue1;
+			text-transform: uppercase;
+			
+			i{
+				margin-left: 10px;
+			}			
+		}
+		.dropdown-btn.open{	
+			i{
+			    transform: rotate(90deg);
+			    position: absolute;				
+			}
+		}
+		ul{
+			background-color: transparent;  
+			li{
+				width: 50%;
+				background-color: $cream;
+				margin: auto;
+
+				a{
+					font-size: .8rem !important;
+				}
+			}
+		}
+	}
+}
+.top-bar{
+	z-index: 999;
+}
+#mobile-menu-couple{
+	li{
+		display: table-cell;
+		width: 19%;
+	}
+}
+#mobile-menu-guest{
+	li{
+		display: inline-block;
+		width: 30%;
+	}
+}
+#mobile-menu{
+	display: none;
+	position: fixed;
+	bottom: -1px;
+	width: 100%;
+	height: 60px;
+	background-color: $blue1;
+	z-index: 999;
+
+	ul{
+		list-style-type: none;
+		text-align: center;
+		margin: 0;
+		display: table-cell;
+		vertical-align: middle;
+
+		li{
+			padding-top: 7px;
+			
+			a{
+				text-align: center;
+
+				img{
+					height: 25px;
+				}
+				p{
+					font-size: .5rem;
+					letter-spacing: 1px;
+					padding-top: 3px;
+					margin-bottom: 0;
+					margin-top: 5px;
+					color: $cream;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+/*** HOME ***/
+
+#home-menu{
+	position: absolute;
+	z-index: 1000;
+	max-width: 1360px;
+	width: 100%;
+
+	#logo{
+		padding-top: 19px;
+		position: relative;
+
+		a{
+			width: 71%;
+  			display: block;
+		}
+	}
+}
+
+/*** PAGE ***/
+.page-menu{
+	.top-bar{
+		background-color: $cream !important;
+
+		#top-banner{
+			background-color: $blue1;
+			height: 49px;
+			
+			.columns{
+				height: inherit;
+			}
+			
+			#logo{
+				a{
+					img{
+						height: 40px;
+					}
+				}
+			}
+			#link-icons{
+				padding-top: 14px;
+
+				ul{
+					.link-icon-single{
+						margin-left: 4px;
+						list-style: none;
+						display: inline-block;
+
+						a{
+							img{
+								height: 17px;
+							}
+
+						}
+						&:nth-child(2){
+							width: 50px;
+						}
+					}
+				}
+			}
+
+
+		}
+		#bottom-banner{
+			background-color: $cream;
+			height: 41px;
+
+			.columns{
+				height: inherit;
+				padding: 0px;
+			}			
+
+			ul{
+				display: table;
+				height: inherit;
+				outline: none !important;
+				margin: auto;
+
+				.link-single{
+					height: inherit;
+					display: table-cell;
+					margin: 0 !important;
+
+					a{
+						@extend .nav-links;
+						display: table-cell;
+						height: inherit;
+						vertical-align: middle;
+
+						&:hover{
+							background-color: $blue1;
+							color: $cream;
+						}
+
+						span{
+							border-right: 1px solid $blue1;	
+							padding: 0 20px;
+						}
+						
+					}
+
+					&:first-child{
+						a{
+							span{
+								
+							}
+						}
+					}
+					&:last-child{
+						a{
+							span{
+								
+								border-right: none !important; 
+							}
+						}
+					}					
+				}
+			}
+		}
+	}
+}
+
+.f-dropdown{
+	background-color: $cream2;
+	width: inherit;
+	border: none;
+	outline: none !important;
+	min-width: 105px;
+
+	&:before, &:after{
+		border: none !important;
+	}	
+
+	li{
+		border-bottom: 1px solid #fff;
+
+		&:hover{
+			background-color: $cream3 !important;
+		}
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+		a{
+			@extend .nav-links;
+			font-size: .5rem !important;
+			width: 100%;
+
+			&:hover{
+				background-color: transparent !important;
+				color: $blue1 !important;
+			}
+		}
+	}				
+}
+
+/****** MENU MODAL ******/
+
+/*** CART ***/
+
+#modal-cart{
+	padding: 54px 70px;
+
+	.medium-sans{
+		margin-bottom: 37px;
+		color: $blue1;
+		text-align: center;
+	}
+
+	.cart-container{
+		ul{
+			height: 151px;
+			overflow: auto;
+
+			.cart-single-item{
+				background-color: #fff;
+				height: 122px;
+				width: 265px;	
+				padding: 9px;
+				margin: 10px;
+				position: relative;
+
+				.remove-item{
+					display: none;
+				}
+
+				&:hover{
+					.remove-item{
+						display: table-cell;
+					    position: absolute;
+					    top: -10px;
+					    right: -10px;
+					    color: #fff;
+					    background-color: red;
+					    width: 20px;
+					    height: 20px;
+					    font-size: small;
+					    text-align: center;
+					    border-radius: 50%;
+					    vertical-align: middle;
+					}
+				}
+				.cart-img, .cart-details{
+					display: inline-block;
+				}
+				.cart-img{
+					background-size: cover !important;
+					width: 60%;
+					height: 105px;
+					max-width: 143px;					
+				}
+				.cart-details{
+					font-size: .1rem !important;
+				    font-family: 'Open Sans', sans-serif;
+				    letter-spacing: 1px;
+				    line-height: 10px;
+					width: 38%;
+					float: right;
+
+					.cart-desc{
+						height: 30px;
+						overflow: hidden;
+					}
+
+					.cart-price{
+						font-size: .7em !important;
+						font-weight: bold;
+						margin: 8px 0px;
+					}
+					.item-qty{
+						display: table;
+						label{
+							font-size: .1rem !important;
+						}
+						input{
+							width: 35px;
+							height: 22px;
+							margin-bottom: 0px;
+						}
+					}
+					.link-button{
+						background-color: #7DCEFD;
+						color: #fff;
+						display: table;	
+						padding: 5px 25px;
+						margin-top: 7px;
+						font-size: .1rem !important;
+
+
+						&:hover{
+							background-color: #599FC7;
+							color: #fff;
+						}
+					}
+				}
+
+			}
+		}
+	}
+	.modal-btn{
+		margin-top: 9px;	
+		text-align: center;	
+
+		.link-button{
+			padding: 13px 32px; 
+		}
+		.add-gift{
+			&:hover{
+				background-color: $coral2;
+			}
+		}
+		.checkout{
+			background-color: $blue2;
+
+			&:hover{
+				background-color: $blue1;
+			}
+		}
+	}
+}

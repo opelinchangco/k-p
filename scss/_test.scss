@@ -1,0 +1,44 @@
+.single-box{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	float: left;
+}
+
+.blue1{
+	@extend .single-box;
+	background-color: $blue1;
+}
+.blue2{
+	@extend .single-box;
+	background-color: $blue2;
+}
+.coral1{
+	@extend .single-box;
+	background-color: $coral1;
+}
+.coral2{
+	@extend .single-box;
+	background-color: $coral2;
+}
+.cream{
+	@extend .single-box;
+	background-color: $cream;
+}
+.gray{
+	@extend .single-box;
+	background-color: $gray;
+}
+
+.brayden{
+	font-family: $cursive;
+	color: $blue1;
+}
+.sanshead{
+	font-family: $sanshead;
+	color: $coral2;
+}
+.bodyfont{
+	font-family: $bodyfont;
+	color: $gray;
+}

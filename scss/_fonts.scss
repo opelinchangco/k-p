@@ -1,0 +1,25 @@
+/*** FONTS ***/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+@font-face {
+    font-family: 'brayden';
+    src: url('../fonts/brayden_script.eot');
+    src: url('../fonts/brayden_script.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brayden_script.woff2') format('woff2'),
+         url('../fonts/brayden_script.woff') format('woff'),
+         url('../fonts/brayden_script.ttf') format('truetype'),
+         url('../fonts/brayden_script.svg#brayden_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'governor';
+    src: url('../fonts/governor.eot');
+    src: url('../fonts/governor.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/governor.woff2') format('woff2'),
+         url('/fonts/governor.woff') format('woff'),
+         url('../fonts/governor.ttf') format('truetype'),
+         url('../fonts/governor.svg#governorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

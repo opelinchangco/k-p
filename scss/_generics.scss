@@ -1,0 +1,176 @@
+/*** GENERICS ***/
+
+html{
+	width: 100%;
+	margin: auto;
+}
+body{
+	background-color: $cream;
+	color: $blue1;
+}
+.bodyfont{
+	font-family: $bodyfont !important;
+}
+p{
+	@extend .bodyfont;
+}
+.row-full{
+	width: 100%;
+	display: table;
+}
+.container-width{
+	padding-left: 15px;	
+	padding-right: 15px;
+	max-width: 873px;
+	width: 100%;
+	margin: auto;
+}
+.small-opensans{
+	font-size: .7em !important;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px;
+}
+/*** COLOR ***/
+
+	.blue1{
+		color: $blue1;
+	}
+	.blue2{
+		color: $blue2;
+	}
+	.coral1{
+		color: $coral1;
+	}
+	.coral2{
+		color: $coral2;
+	}
+	.cream{
+		color: $cream;
+	}
+	.gray{
+		color: $gray;
+	}
+
+
+/*** CURSIVE ***/
+
+	.cursive{
+		font-family: $cursive;
+		line-height: 10px;
+	}
+	.large-cursive {
+		@extend .cursive;
+		@include large-cursive(5.2rem);
+	}
+
+	.medium-cursive {
+		@extend .cursive;
+		@include medium-cursive(3.5rem);
+	}
+
+	.small-cursive {
+		@extend .cursive;
+		@include medium-cursive(3rem);
+	}
+	.smaller-cursive {
+		@extend .cursive;
+		@include medium-cursive(2.5rem);
+	}	
+
+/*** GOVERNOR ***/
+
+	.sans-head{
+		font-family: $sans-head;
+		letter-spacing: 8px;
+	}
+	.large-sans {
+		@extend .sans-head;
+		@include large-cursive(2.2rem);
+	}
+
+	.medium-sans {
+		@extend .sans-head;
+		@include medium-cursive(1.3rem);
+	}
+
+	.small-sans {
+		@extend .sans-head;
+		@include medium-cursive(.9rem);
+	}
+
+/*** LINKS ***/
+	
+	.link-button{
+		/** Use @include link-button($value) to change font and border color ***/
+
+		font-family: $bodyfont;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 8px 10px;
+		font-size: .7rem;
+	}
+
+	.nav-links{
+		font-family: $bodyfont;
+		text-transform: uppercase;
+		font-size: .6rem !important;	
+		color: $blue1;
+	}
+	.modal-text{
+		font-family: $bodyfont;
+		font-size: .7rem !important;	
+		color: $blue1 !important;		
+	}
+
+/*** FOOTER ***/
+
+footer{
+	background-color: $gray;
+	display: table !important;
+	padding-top: 45px;
+	padding-bottom: 60px;
+	
+	.footer-head, p{
+		color: $white;
+	}
+	.footer-head{
+		letter-spacing: 3px;
+	}
+
+	p{
+	  font-size: .65rem;
+	  margin-bottom: 0px;	
+	  line-height: 16px;	
+	}
+	#copyright{
+		float: left;
+	}
+	.footer-icon, .copyright-info{
+		float: left;
+	}
+	.footer-icon{
+		margin-right: 25px;
+
+		img{
+			height: 58px;
+		}
+	}
+	.contact-text, .backtotop{
+		float: left;
+	}
+	.backtotop{
+		margin-left: 30px;
+		display: block;
+	}
+	#mobile-backtotop{
+		display: none !important;
+	}	
+}
+
+.input-field{
+	@extend .modal-text;
+	background-color: transparent;
+	box-shadow: none !important;
+	border: 1px solid $blue1;
+
+}
