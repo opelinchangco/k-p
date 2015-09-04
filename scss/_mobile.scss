@@ -71,6 +71,26 @@
       width: 16%;
     }
   }
+  #couple-profile-menu{
+    div{
+      ul{
+        li{
+            margin: 0 10px;
+        }
+      }
+    }
+  }
+  #profile-filter{
+    .filter-options{
+      ul{
+        text-align: center;
+        li{
+          list-style: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
   /*** SHOP ***/
 
   #featured-brands{

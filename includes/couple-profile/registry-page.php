@@ -2,7 +2,7 @@
 	<div class="large-8 large-centered columns">
 		<div class="row">
 			<div class="large-6 medium-6 columns right filter-category filter-options">
-				<ul class="inline-list">
+				<ul>
 					<li>
 						<a href="">
 							<img src="img/group-gift.png">
